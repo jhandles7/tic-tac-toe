@@ -53,6 +53,7 @@ namespace tic_tac_toe
             // 
             // tile2
             // 
+            this.tile2.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile2.Location = new System.Drawing.Point(118, 94);
             this.tile2.Name = "tile2";
             this.tile2.Size = new System.Drawing.Size(91, 76);

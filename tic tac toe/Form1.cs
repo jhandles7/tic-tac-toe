@@ -27,20 +27,21 @@ namespace tic_tac_toe
 
         private void tile1_Click(object sender, EventArgs e)
         {
-            if (player_turn %2 == 0)
+            if (tile1.Text == "")
             {
-                
-                tile1.Text = "X";
-                player_turn++;
-                
+                if (player_turn % 2 == 0)
+                {
+                    tile1.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile1.Text = "O";
+                    player_turn++;
+                }
             }
-            else
-            {
-                
-                tile1.Text = "O";
-                player_turn++;
-                
-            }
+          
+            
         }
 
         private void tile2_Click(object sender, EventArgs e)
