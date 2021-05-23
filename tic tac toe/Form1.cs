@@ -46,55 +46,139 @@ namespace tic_tac_toe
 
         private void tile2_Click(object sender, EventArgs e)
         {
-            if (player_turn % 2 == 0)
+            if (tile2.Text == "")
             {
-                
-                tile2.Text = "X";
-                player_turn++;
-                
+                if (player_turn % 2 == 0)
+                {
+                    tile2.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile2.Text = "O";
+                    player_turn++;
+                }
             }
-            else
-            {
-                
-                tile2.Text = "O";
-                player_turn++;
-                
-            }
+            
         }
 
         private void tile3_Click(object sender, EventArgs e)
         {
-
+            if (tile3.Text == "")
+            {
+                if (player_turn % 2 == 0)
+                {
+                    tile3.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile3.Text = "O";
+                    player_turn++;
+                }
+            }
         }
 
         private void tile4_Click(object sender, EventArgs e)
         {
-
+            if (tile4.Text == "")
+            {
+                if (player_turn % 2 == 0)
+                {
+                    tile4.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile4.Text = "O";
+                    player_turn++;
+                }
+            }
         }
 
         private void tile5_Click(object sender, EventArgs e)
         {
-
+            if (tile5.Text == "")
+            {
+                if (player_turn % 2 == 0)
+                {
+                    tile5.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile5.Text = "O";
+                    player_turn++;
+                }
+            }
         }
 
         private void tile6_Click(object sender, EventArgs e)
         {
-
+            if (tile6.Text == "")
+            {
+                if (player_turn % 2 == 0)
+                {
+                    tile6.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile6.Text = "O";
+                    player_turn++;
+                }
+            }
         }
 
         private void tile7_Click(object sender, EventArgs e)
         {
-
+            if (tile7.Text == "")
+            {
+                if (player_turn % 2 == 0)
+                {
+                    tile7.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile7.Text = "O";
+                    player_turn++;
+                }
+            }
         }
 
         private void tile8_Click(object sender, EventArgs e)
         {
-
+            if (tile8.Text == "")
+            {
+                if (player_turn % 2 == 0)
+                {
+                    tile8.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile8.Text = "O";
+                    player_turn++;
+                }
+            }
         }
 
         private void tile9_Click(object sender, EventArgs e)
         {
-
+            if (tile9.Text == "")
+            {
+                if (player_turn % 2 == 0)
+                {
+                    tile9.Text = "X";
+                    player_turn++;
+                }
+                else
+                {
+                    tile9.Text = "O";
+                    player_turn++;
+                }
+            }
         }
     }
 }

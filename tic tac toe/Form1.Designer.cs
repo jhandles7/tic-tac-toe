@@ -63,6 +63,7 @@ namespace tic_tac_toe
             // 
             // tile3
             // 
+            this.tile3.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile3.Location = new System.Drawing.Point(225, 94);
             this.tile3.Name = "tile3";
             this.tile3.Size = new System.Drawing.Size(91, 76);
@@ -72,6 +73,7 @@ namespace tic_tac_toe
             // 
             // tile4
             // 
+            this.tile4.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile4.Location = new System.Drawing.Point(12, 177);
             this.tile4.Name = "tile4";
             this.tile4.Size = new System.Drawing.Size(91, 76);
@@ -81,6 +83,7 @@ namespace tic_tac_toe
             // 
             // tile5
             // 
+            this.tile5.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile5.Location = new System.Drawing.Point(118, 177);
             this.tile5.Name = "tile5";
             this.tile5.Size = new System.Drawing.Size(91, 76);
@@ -90,6 +93,7 @@ namespace tic_tac_toe
             // 
             // tile6
             // 
+            this.tile6.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile6.Location = new System.Drawing.Point(225, 177);
             this.tile6.Name = "tile6";
             this.tile6.Size = new System.Drawing.Size(91, 76);
@@ -99,6 +103,7 @@ namespace tic_tac_toe
             // 
             // tile8
             // 
+            this.tile8.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile8.Location = new System.Drawing.Point(118, 258);
             this.tile8.Name = "tile8";
             this.tile8.Size = new System.Drawing.Size(91, 76);
@@ -108,6 +113,7 @@ namespace tic_tac_toe
             // 
             // tile7
             // 
+            this.tile7.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile7.Location = new System.Drawing.Point(12, 259);
             this.tile7.Name = "tile7";
             this.tile7.Size = new System.Drawing.Size(91, 76);
@@ -117,6 +123,7 @@ namespace tic_tac_toe
             // 
             // tile9
             // 
+            this.tile9.Font = new System.Drawing.Font("Wide Latin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tile9.Location = new System.Drawing.Point(225, 259);
             this.tile9.Name = "tile9";
             this.tile9.Size = new System.Drawing.Size(91, 76);
