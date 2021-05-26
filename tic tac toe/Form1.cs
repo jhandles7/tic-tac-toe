@@ -207,7 +207,6 @@ namespace tic_tac_toe
                 }
                 winner = true;
             }
-
             if (tile4.Text != "" && tile5.Text != "" && tile6.Text != "")
             {
                 if (tile4.Text == tile5.Text && tile4.Text == tile6.Text)
@@ -239,6 +238,84 @@ namespace tic_tac_toe
                 winner = true;
             }
 
+            ///Check winner vertically
+            if (tile1.Text != "" && tile4.Text != "" && tile7.Text != "")
+            {
+                if (tile1.Text == tile4.Text && tile1.Text == tile7.Text)
+                {
+                    if (tile1.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
+                }
+                winner = true;
+            }
+            if (tile2.Text != "" && tile5.Text != "" && tile8.Text != "")
+            {
+                if (tile2.Text == tile5.Text && tile2.Text == tile8.Text)
+                {
+                    if (tile2.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
+                }
+                winner = true;
+            }
+            if (tile3.Text != "" && tile6.Text != "" && tile9.Text != "")
+            {
+                if (tile3.Text == tile6.Text && tile3.Text == tile9.Text)
+                {
+                    if (tile3.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
+                }
+                winner = true;
+            }
+
+            //Check winner diagonally
+            if (tile1.Text != "" && tile5.Text != "" && tile9.Text != "")
+            {
+                if (tile1.Text == tile5.Text && tile1.Text == tile9.Text)
+                {
+                    if (tile1.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
+                }
+                winner = true;
+            }
+            if (tile3.Text != "" && tile5.Text != "" && tile7.Text != "")
+            {
+                if (tile3.Text == tile5.Text && tile3.Text == tile7.Text)
+                {
+                    if (tile3.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
+                }
+                winner = true;
+            }
         }
 
         private void btn_play_again_Click(object sender, EventArgs e)
