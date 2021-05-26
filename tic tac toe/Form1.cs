@@ -24,6 +24,7 @@ namespace tic_tac_toe
 
         
         int player_turn = 0;
+        bool winner = false;
 
         private void tile1_Click(object sender, EventArgs e)
         {
@@ -40,8 +41,8 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
-          
-            
+
+            check_winner();
         }
 
         private void tile2_Click(object sender, EventArgs e)
@@ -59,7 +60,7 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
-            
+            check_winner();
         }
 
         private void tile3_Click(object sender, EventArgs e)
@@ -77,6 +78,7 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
+            check_winner();
         }
 
         private void tile4_Click(object sender, EventArgs e)
@@ -177,6 +179,17 @@ namespace tic_tac_toe
                 {
                     tile9.Text = "O";
                     player_turn++;
+                }
+            }
+        }
+
+        public void check_winner()
+        {
+            if (tile1.Text!= "" && tile2.Text != "" && tile3.Text != "")
+            {
+                if (tile1.Text == tile2.Text && tile1.Text == tile3.Text)
+                {
+                    MessageBox.Show("Winner");
                 }
             }
         }
