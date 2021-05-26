@@ -25,7 +25,10 @@ namespace tic_tac_toe
         
         int player_turn = 0;
         bool winner = false;
+        
 
+
+        
         private void tile1_Click(object sender, EventArgs e)
         {
             if (tile1.Text == "")
@@ -213,11 +216,11 @@ namespace tic_tac_toe
                 {
                     if (tile4.Text == "X")
                     {
-                        MessageBox.Show("Player X Wins!!!");
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;
@@ -228,11 +231,11 @@ namespace tic_tac_toe
                 {
                     if (tile7.Text == "X")
                     {
-                        MessageBox.Show("Player X Wins!!!");
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;
@@ -245,11 +248,11 @@ namespace tic_tac_toe
                 {
                     if (tile1.Text == "X")
                     {
-                        MessageBox.Show("Player X Wins!!!");
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;
@@ -260,11 +263,11 @@ namespace tic_tac_toe
                 {
                     if (tile2.Text == "X")
                     {
-                        MessageBox.Show("Player X Wins!!!");
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;
@@ -275,11 +278,11 @@ namespace tic_tac_toe
                 {
                     if (tile3.Text == "X")
                     {
-                        MessageBox.Show("Player X Wins!!!");
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;
@@ -292,11 +295,11 @@ namespace tic_tac_toe
                 {
                     if (tile1.Text == "X")
                     {
-                        MessageBox.Show("Player X Wins!!!");
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;
@@ -307,16 +310,24 @@ namespace tic_tac_toe
                 {
                     if (tile3.Text == "X")
                     {
-                        MessageBox.Show("Player X Wins!!!");
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;
             }
+
+            //check draw
+            if (player_turn == 9)
+            {
+                DisplayBox.Text = "Draw!!";
+            }
         }
+
+        
 
         private void btn_play_again_Click(object sender, EventArgs e)
         {
@@ -331,6 +342,7 @@ namespace tic_tac_toe
             tile7.Text = "";
             tile8.Text = "";
             tile9.Text = "";
+            DisplayBox.Text = "";
         }
     }
 }
