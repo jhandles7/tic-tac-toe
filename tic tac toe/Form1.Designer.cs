@@ -139,6 +139,7 @@ namespace tic_tac_toe
             this.btn_play_again.TabIndex = 10;
             this.btn_play_again.Text = "Play Again";
             this.btn_play_again.UseVisualStyleBackColor = true;
+            this.btn_play_again.Click += new System.EventHandler(this.btn_play_again_Click);
             // 
             // form1
             // 

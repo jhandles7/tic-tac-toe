@@ -96,6 +96,7 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
+            check_winner();
         }
 
         private void tile5_Click(object sender, EventArgs e)
@@ -113,6 +114,7 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
+            check_winner();
         }
 
         private void tile6_Click(object sender, EventArgs e)
@@ -130,6 +132,7 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
+            check_winner();
         }
 
         private void tile7_Click(object sender, EventArgs e)
@@ -147,6 +150,7 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
+            check_winner();
         }
 
         private void tile8_Click(object sender, EventArgs e)
@@ -164,6 +168,7 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
+            check_winner();
         }
 
         private void tile9_Click(object sender, EventArgs e)
@@ -181,17 +186,74 @@ namespace tic_tac_toe
                     player_turn++;
                 }
             }
+            check_winner();
         }
 
         public void check_winner()
         {
+            ///Check winner horizontally
             if (tile1.Text!= "" && tile2.Text != "" && tile3.Text != "")
             {
                 if (tile1.Text == tile2.Text && tile1.Text == tile3.Text)
                 {
-                    MessageBox.Show("Winner");
+                    if (tile1.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
                 }
+                winner = true;
             }
+
+            if (tile4.Text != "" && tile5.Text != "" && tile6.Text != "")
+            {
+                if (tile4.Text == tile5.Text && tile4.Text == tile6.Text)
+                {
+                    if (tile4.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
+                }
+                winner = true;
+            }
+            if (tile7.Text != "" && tile8.Text != "" && tile9.Text != "")
+            {
+                if (tile7.Text == tile8.Text && tile7.Text == tile9.Text)
+                {
+                    if (tile7.Text == "X")
+                    {
+                        MessageBox.Show("Player X Wins!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player O Wins!!!");
+                    }
+                }
+                winner = true;
+            }
+
+        }
+
+        private void btn_play_again_Click(object sender, EventArgs e)
+        {
+            winner = false;
+            player_turn = 0;
+            tile1.Text = "";
+            tile2.Text = "";
+            tile3.Text = "";
+            tile4.Text = "";
+            tile5.Text = "";
+            tile6.Text = "";
+            tile7.Text = "";
+            tile8.Text = "";
+            tile9.Text = "";
         }
     }
 }
