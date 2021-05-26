@@ -197,12 +197,12 @@ namespace tic_tac_toe
                 if (tile1.Text == tile2.Text && tile1.Text == tile3.Text)
                 {
                     if (tile1.Text == "X")
-                    {
-                        MessageBox.Show("Player X Wins!!!");
+                    {    
+                        DisplayBox.Text = "Player X Wins!!!";
                     }
                     else
                     {
-                        MessageBox.Show("Player O Wins!!!");
+                        DisplayBox.Text = "Player O Wins!!!";
                     }
                 }
                 winner = true;

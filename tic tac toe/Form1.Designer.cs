@@ -39,6 +39,7 @@ namespace tic_tac_toe
             this.tile7 = new System.Windows.Forms.Button();
             this.tile9 = new System.Windows.Forms.Button();
             this.btn_play_again = new System.Windows.Forms.Button();
+            this.DisplayBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tile1
@@ -133,7 +134,7 @@ namespace tic_tac_toe
             // 
             // btn_play_again
             // 
-            this.btn_play_again.Location = new System.Drawing.Point(140, 340);
+            this.btn_play_again.Location = new System.Drawing.Point(118, 340);
             this.btn_play_again.Name = "btn_play_again";
             this.btn_play_again.Size = new System.Drawing.Size(83, 29);
             this.btn_play_again.TabIndex = 10;
@@ -141,12 +142,22 @@ namespace tic_tac_toe
             this.btn_play_again.UseVisualStyleBackColor = true;
             this.btn_play_again.Click += new System.EventHandler(this.btn_play_again_Click);
             // 
+            // DisplayBox
+            // 
+            this.DisplayBox.Font = new System.Drawing.Font("Elephant", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DisplayBox.Location = new System.Drawing.Point(12, 12);
+            this.DisplayBox.Multiline = true;
+            this.DisplayBox.Name = "DisplayBox";
+            this.DisplayBox.Size = new System.Drawing.Size(304, 66);
+            this.DisplayBox.TabIndex = 11;
+            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(331, 381);
+            this.Controls.Add(this.DisplayBox);
             this.Controls.Add(this.btn_play_again);
             this.Controls.Add(this.tile9);
             this.Controls.Add(this.tile7);
@@ -161,6 +172,7 @@ namespace tic_tac_toe
             this.Text = "Tic Tac Toe Game";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -176,6 +188,7 @@ namespace tic_tac_toe
         private System.Windows.Forms.Button tile7;
         private System.Windows.Forms.Button tile9;
         private System.Windows.Forms.Button btn_play_again;
+        private System.Windows.Forms.TextBox DisplayBox;
     }
 }
 
