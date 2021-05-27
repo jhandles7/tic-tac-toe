@@ -24,8 +24,6 @@ namespace tic_tac_toe
         int player_turn = 0;
         bool winner = false;
         
-
-
         
         private void tile1_Click(object sender, EventArgs e)
         {
@@ -209,6 +207,19 @@ namespace tic_tac_toe
             check_winner();
         }
 
+        public void Stop_Turn()
+        {
+            tile1.Enabled = false;
+            tile2.Enabled = false;
+            tile3.Enabled = false;
+            tile4.Enabled = false;
+            tile5.Enabled = false;
+            tile6.Enabled = false;
+            tile7.Enabled = false;
+            tile8.Enabled = false;
+            tile9.Enabled = false;
+        }
+
         public void check_winner()
         {
             ///Check winner horizontally
@@ -224,6 +235,7 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
                 }
                 winner = true;
                 
@@ -240,6 +252,8 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
+
                 }
                 winner = true;
             }
@@ -255,6 +269,7 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
                 }
                 winner = true;
             }
@@ -272,6 +287,7 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
                 }
                 winner = true;
             }
@@ -287,6 +303,7 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
                 }
                 winner = true;
             }
@@ -302,6 +319,7 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
                 }
                 winner = true;
             }
@@ -319,6 +337,7 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
                 }
                 winner = true;
             }
@@ -334,7 +353,9 @@ namespace tic_tac_toe
                     {
                         DisplayBox.Text = "Player O Wins!!!";
                     }
+                    Stop_Turn();
                 }
+                
                 winner = true;
             }
 
@@ -362,6 +383,15 @@ namespace tic_tac_toe
             tile9.Text = "";
             DisplayBox.Text = "";
             turn_txtbox.Text = "X Turn";
+            tile1.Enabled = true;
+            tile2.Enabled = true;
+            tile3.Enabled = true;
+            tile4.Enabled = true;
+            tile5.Enabled = true;
+            tile6.Enabled = true;
+            tile7.Enabled = true;
+            tile8.Enabled = true;
+            tile9.Enabled = true;
         }       
     }
 }
