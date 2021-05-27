@@ -226,6 +226,7 @@ namespace tic_tac_toe
                     }
                 }
                 winner = true;
+                
             }
             if (tile4.Text != "" && tile5.Text != "" && tile6.Text != "")
             {
@@ -342,8 +343,6 @@ namespace tic_tac_toe
             {
                 DisplayBox.Text = "Draw!!";
             }
-
-            
         }
 
         
@@ -362,8 +361,7 @@ namespace tic_tac_toe
             tile8.Text = "";
             tile9.Text = "";
             DisplayBox.Text = "";
-        }
-
-        
+            turn_txtbox.Text = "X Turn";
+        }       
     }
 }
