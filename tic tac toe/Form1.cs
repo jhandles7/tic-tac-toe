@@ -20,9 +20,7 @@ namespace tic_tac_toe
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        
+        }   
         int player_turn = 0;
         bool winner = false;
         
@@ -36,11 +34,14 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile1.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
+                    
                     tile1.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -55,11 +56,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile2.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile2.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -73,11 +76,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile3.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile3.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -91,11 +96,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile4.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile4.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -109,11 +116,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile5.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile5.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -127,11 +136,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile6.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile6.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -145,11 +156,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile7.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile7.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -163,11 +176,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile8.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile8.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -181,11 +196,13 @@ namespace tic_tac_toe
                 if (player_turn % 2 == 0)
                 {
                     tile9.Text = "X";
+                    turn_txtbox.Text = "O Turn";
                     player_turn++;
                 }
                 else
                 {
                     tile9.Text = "O";
+                    turn_txtbox.Text = "X Turn";
                     player_turn++;
                 }
             }
@@ -325,6 +342,8 @@ namespace tic_tac_toe
             {
                 DisplayBox.Text = "Draw!!";
             }
+
+            
         }
 
         
@@ -344,5 +363,7 @@ namespace tic_tac_toe
             tile9.Text = "";
             DisplayBox.Text = "";
         }
+
+        
     }
 }

@@ -40,6 +40,8 @@ namespace tic_tac_toe
             this.tile9 = new System.Windows.Forms.Button();
             this.btn_play_again = new System.Windows.Forms.Button();
             this.DisplayBox = new System.Windows.Forms.TextBox();
+            this.turn_label = new System.Windows.Forms.Label();
+            this.turn_txtbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tile1
@@ -144,12 +146,36 @@ namespace tic_tac_toe
             // 
             // DisplayBox
             // 
-            this.DisplayBox.Font = new System.Drawing.Font("Elephant", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DisplayBox.Location = new System.Drawing.Point(12, 12);
+            this.DisplayBox.BackColor = System.Drawing.Color.Maroon;
+            this.DisplayBox.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DisplayBox.Location = new System.Drawing.Point(12, 23);
             this.DisplayBox.Multiline = true;
             this.DisplayBox.Name = "DisplayBox";
-            this.DisplayBox.Size = new System.Drawing.Size(304, 66);
+            this.DisplayBox.Size = new System.Drawing.Size(197, 66);
             this.DisplayBox.TabIndex = 11;
+            this.DisplayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // turn_label
+            // 
+            this.turn_label.AutoSize = true;
+            this.turn_label.BackColor = System.Drawing.SystemColors.Highlight;
+            this.turn_label.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.turn_label.Location = new System.Drawing.Point(230, 27);
+            this.turn_label.Name = "turn_label";
+            this.turn_label.Size = new System.Drawing.Size(0, 27);
+            this.turn_label.TabIndex = 12;
+            // 
+            // turn_txtbox
+            // 
+            this.turn_txtbox.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.turn_txtbox.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.turn_txtbox.Location = new System.Drawing.Point(215, 57);
+            this.turn_txtbox.Multiline = true;
+            this.turn_txtbox.Name = "turn_txtbox";
+            this.turn_txtbox.Size = new System.Drawing.Size(111, 31);
+            this.turn_txtbox.TabIndex = 13;
+            this.turn_txtbox.Text = "X Turn";
+            this.turn_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // form1
             // 
@@ -157,6 +183,8 @@ namespace tic_tac_toe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(331, 381);
+            this.Controls.Add(this.turn_txtbox);
+            this.Controls.Add(this.turn_label);
             this.Controls.Add(this.DisplayBox);
             this.Controls.Add(this.btn_play_again);
             this.Controls.Add(this.tile9);
@@ -189,6 +217,8 @@ namespace tic_tac_toe
         private System.Windows.Forms.Button tile9;
         private System.Windows.Forms.Button btn_play_again;
         private System.Windows.Forms.TextBox DisplayBox;
+        private System.Windows.Forms.Label turn_label;
+        private System.Windows.Forms.TextBox turn_txtbox;
     }
 }
 
